@@ -20,7 +20,7 @@ public class TaskManagement : MonoBehaviour
 
     private void Update()
     {
-        if (taskCheckerSO.tasksCompletedCount == 6)
+        if (taskCheckerSO.tasksCompletedCount >= 6)
         {
             dialogueAnimator.canTalk = true;
         }
@@ -106,10 +106,10 @@ public class TaskManagement : MonoBehaviour
         {
             taskCheckerSO.bushDeathCount++;
             if (taskCheckerSO.bushDeathCount == 0)
-                questTask.text = "Срубить кусты : 1/2";
+                questTask.text = "Срубить кусты: 1/2";
             else if (taskCheckerSO.bushDeathCount == 1)
             {
-                questTask.text = "Срубить кусты : 2/2";
+                questTask.text = "Срубить кусты: 2/2";
                 taskCheckerSO.questCompleted = true;
                 TaskIsCompleted();
             }

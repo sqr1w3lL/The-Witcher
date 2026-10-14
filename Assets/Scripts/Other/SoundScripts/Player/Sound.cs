@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class DashSound : MonoBehaviour
+public class Sound : MonoBehaviour
 {
-    [SerializeField] private AudioSource audioSource; 
+    [SerializeField] protected AudioSource audioSource; 
 
     public void Play()
     {

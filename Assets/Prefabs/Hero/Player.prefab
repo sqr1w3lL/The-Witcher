@@ -1290,8 +1290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73915e6bf8f07459c95dd5ad0a69a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitBottomSound
-  hitDown: {fileID: 6471624071619358512}
-  hitUp: {fileID: 5589276097818599839}
+  audioSource: {fileID: 5589276097818599839}
+  audioSource2: {fileID: 6471624071619358512}
 --- !u!4 &8652601974257569526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3567667176430867450, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}

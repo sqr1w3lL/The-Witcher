@@ -1,25 +1,18 @@
 using UnityEngine;
 
-public class SkeletonSounds : MonoBehaviour
+public class SkeletonSounds : Sound
 {
-    [SerializeField] private AudioSource skeletonRoaming;
-    [SerializeField] private AudioSource skeletonDeath;
+    [SerializeField] private AudioSource audioSource2;
 
-    public void Play_Death()
+    public void Play_2()
     {
-        if (skeletonDeath == null) return;
-        skeletonDeath.Play();
+        if (audioSource2 == null) return;
+        audioSource2.Play();
     }
 
-    public void Play_Roaming()
+    public void Stop_2()
     {
-        if (skeletonRoaming == null) return;
-        skeletonRoaming.Play();
-    }
-
-    public void Stop_Roaming()
-    {
-        if (skeletonRoaming == null) return;
-        skeletonRoaming.Stop();
+        if (audioSource2 == null) return;
+        audioSource2.Stop();
     }
 }

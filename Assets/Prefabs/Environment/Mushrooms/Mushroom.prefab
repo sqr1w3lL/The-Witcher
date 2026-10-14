@@ -166,6 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUp
   slotButton: {fileID: 4079099992620621358, guid: c66e01cf53947c14fa2b16cc25028fb8, type: 3}
+  itemPrefab: {fileID: 3348156052954813848}
+  taskManagement: {fileID: 0}
 --- !u!1 &7611087873202624630
 GameObject:
   m_ObjectHideFlags: 0

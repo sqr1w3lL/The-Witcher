@@ -1,19 +1,12 @@
 using UnityEngine;
 
-public class HitSounds : MonoBehaviour
+public class HitSounds : Sound
 {
-    [SerializeField] private AudioSource hitDown;
-    [SerializeField] private AudioSource hitUp;
+    [SerializeField] private AudioSource audioSource2;
 
-    public void Play_HitUpper()
+    public void Play_bottom()
     {
-        if (hitUp == null) return;
-        hitUp.Play();
-    }
-
-    public void Play_HitBottom()
-    {
-        if (hitDown == null) return;
-        hitDown.Play();
+        if (audioSource2 == null) return;
+        audioSource2.Play();
     }
 }

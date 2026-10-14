@@ -967,8 +967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1511aad005468e54dbdec4dabcb602cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkeletonRoamingSound
-  skeletonRoaming: {fileID: 696429231300738707}
-  skeletonDeath: {fileID: 6669955013336044000}
+  audioSource: {fileID: 6669955013336044000}
+  audioSource2: {fileID: 696429231300738707}
 --- !u!1 &8269006549670434492
 GameObject:
   m_ObjectHideFlags: 0

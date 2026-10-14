@@ -5,9 +5,15 @@ public class PickUp : MonoBehaviour
 { 
     [SerializeField] private GameObject slotButton;
     [SerializeField] private GameObject itemPrefab;
+    private TaskManagement _taskManagement;
     private Inventory inventory;
     private bool isSubscribed = false;
     private bool picked = false;
+
+    private void Awake()
+    {
+        _taskManagement = FindAnyObjectByType<TaskManagement>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -63,6 +69,13 @@ public class PickUp : MonoBehaviour
                 }
 
                 picked = true;
+
+                string itemName = slotItem.itemPrefab.name;
+
+                if (itemName.StartsWith("Flower"))
+                    _taskManagement.FlowerIsPicked();
+                else if (itemName.StartsWith("Mushroom"))
+                    _taskManagement.MushroomIsPicked();
 
                 PlayerInput.Instance.OnPlayerPickItem -= OnPickItem;
                 isSubscribed = false;

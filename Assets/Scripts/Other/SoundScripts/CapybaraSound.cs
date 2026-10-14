@@ -1,15 +1,7 @@
 using UnityEngine;
 
-public class CapybaraSound : MonoBehaviour
+public class CapybaraSound : Sound
 {
-    [SerializeField] private AudioSource audioSource; 
-
-    public void Play()
-    {
-        if (audioSource == null) return;
-        audioSource.Play();
-    }
-
     public void Stop()
     {
         audioSource.Stop();

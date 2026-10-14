@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     [SerializeField] private HealthValue playerHealthPoint;
     [SerializeField] private TrailRenderer trailRenderer;
     [SerializeField] private PauseMenu pauseMenu;
-    [SerializeField] private DashSound dashSound;
+    [SerializeField] private Sound dashSound;
 
     private Rigidbody2D _rigidBody2D;
     private KnockBack _knockBack;

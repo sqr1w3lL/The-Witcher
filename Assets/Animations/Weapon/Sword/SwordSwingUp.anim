@@ -698,7 +698,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: Play_HitUpper
+    functionName: Play
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
