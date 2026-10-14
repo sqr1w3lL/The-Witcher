@@ -43,7 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 9eb7e070635e9864b9f9a0ce57b622e6, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: de785a2429439bd4680dd51b686c1e8a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2d3d59933e0d0f7499fa948290b402e0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.009
   m_Pitch: 1
@@ -172,7 +172,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 4afa8738f45c254489784d21f998978a, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 8d220bda6711c634d9955a1358378f13, type: 3}
+  m_Resource: {fileID: 8300000, guid: dddf58102a918bf4387510695e429659, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -301,7 +301,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 4afa8738f45c254489784d21f998978a, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f1dc2ef3a37d454448938a4d9767902f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 70f5fc4e7417af64682155f4f3bfced8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.15
   m_Pitch: 1
@@ -1171,11 +1171,11 @@ MonoBehaviour:
   - name: Dirt
     tilemap: {fileID: 0}
     tile: {fileID: 11400000, guid: 5f09489e8258ae94eab4dfec9edc9c54, type: 2}
-    footstepClip: {fileID: 8300000, guid: 7f6dd310c9ca8054e99dac1bfa5c1db5, type: 3}
+    footstepClip: {fileID: 8300000, guid: 8457dc52b54a51344a050a57514ec786, type: 3}
   - name: Grass
     tilemap: {fileID: 0}
     tile: {fileID: 11400000, guid: 4471a6ac89676e040a8f0c4cdca41cdd, type: 2}
-    footstepClip: {fileID: 8300000, guid: 478c33c53c10dd54b9bb7db1969b7ef7, type: 3}
+    footstepClip: {fileID: 8300000, guid: 2a8488a5843902847875c4e34d48f0cf, type: 3}
   audioSource: {fileID: 7489238842781477119}
 --- !u!114 &8510888399745245043
 MonoBehaviour:

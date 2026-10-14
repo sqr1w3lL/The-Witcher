@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f4b725619c1b541b09903e96fe7577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordSlashVisual
+  sword: {fileID: 5103376940152912256}
 --- !u!1 &7938895324093064512
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b841a153fe40b2047af4490d200183af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordVisual
+  sword: {fileID: 5103376940152912256}
 --- !u!1 &8991337567461132355
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,4 +391,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3723866ea7184043900177946a8d0f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sword
-  _damageAmount: 2
+  damageAmount: 2

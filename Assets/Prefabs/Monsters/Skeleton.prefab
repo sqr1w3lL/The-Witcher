@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyEntity
   enemySO: {fileID: 11400000, guid: 6c070ec5c7fd47946b24a1e3f3f40d7c, type: 2}
-  _healthBar: {fileID: 3169598792438101561}
+  healthBar: {fileID: 0}
   maxHealth: 50
   deathDestroyDelay: 5
 --- !u!1 &1868323746501248074
@@ -321,23 +321,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d52db0de60d2d814b81b4bb127dec553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
-  _healthBarFilling: {fileID: 1891505710179563070}
-  _enemyEntity: {fileID: 929893456995993064}
-  _gradient:
+  healthBarFilling: {fileID: 0}
+  enemyEntity: {fileID: 0}
+  gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0.4760489, b: 0, a: 1}
-    key2: {r: 1, g: 0.7608102, b: 0, a: 0}
-    key3: {r: 0.5809743, g: 1, b: 0, a: 0}
-    key4: {r: 0.20195717, g: 0.5, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 16191
-    ctime2: 32575
-    ctime3: 48573
-    ctime4: 65535
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
     ctime5: 0
     ctime6: 0
     ctime7: 0
@@ -350,8 +350,8 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: 0
-    m_NumColorKeys: 5
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
 --- !u!1 &4095308857119988612
 GameObject:
@@ -532,7 +532,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 15690261e0dc2164d8e816584c7df3f6, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 5269b8117397357488bc8b4a69f098bd, type: 3}
+  m_Resource: {fileID: 8300000, guid: 51420d57429a185449e4d6e3f9911ad2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -661,7 +661,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: e51de95695e794e4f9b465e5a2b35665, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 949798ad2f25b6b4e8f85b1c0a59c558, type: 3}
+  m_Resource: {fileID: 8300000, guid: 880862c93abcd544f9c54ac9695241b7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.05
   m_Pitch: 1
@@ -953,8 +953,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkeletonVisual
   enemyAI: {fileID: 1613235676065752084}
-  enemyShadow: {fileID: 8269006549670434492}
   enemyEntity: {fileID: 929893456995993064}
+  enemyShadow: {fileID: 8269006549670434492}
 --- !u!114 &6698818596210819063
 MonoBehaviour:
   m_ObjectHideFlags: 0
