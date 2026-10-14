@@ -4,7 +4,7 @@ public class SwordSlashVisual : MonoBehaviour
 {
     private static readonly int AttackHash = Animator.StringToHash("Attack");
 
-    [SerializeField] private Sword sword;
+    public Sword sword;
     private Animator _animator;
 
     private void Awake()

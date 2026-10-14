@@ -1,63 +1,26 @@
-using UnityEngine;
-using System.Collections.Generic;
+using System;
 using System.Collections;
+using UnityEngine;
 
-public class DialogueManagerKing : MonoBehaviour
+public class DialogueManagerKing : DialogueManagerBase
 {
     [SerializeField] private GameObject _winGame;
     [SerializeField] private WinMenu _winMenu;
-    [SerializeField] private TMPro.TMP_Text _dialogueText;
-    [SerializeField] private TMPro.TMP_Text _nameText;
-    [SerializeField] private Animator _boxAnim;
-    [SerializeField] private Animator _startAnim;
 
-    private Queue<string> _sentences;
+    private bool _gameIsWon;
 
-    private void Start()
+    public override void EndDialogue()
     {
-        _sentences = new Queue<string>();
-    }
-
-    public void StartDialogue(Dialogue dialogue)
-    {
-        _boxAnim.SetBool("boxOpen", true);
-        _startAnim.SetBool("startOpen", false);
-
-        _nameText.text = dialogue.name;
-        _sentences.Clear();
-
-        foreach (string sentence in dialogue.sentences)
-            _sentences.Enqueue(sentence);
-
-        DisplayNextSentence();
-    }
-
-    public void DisplayNextSentence()
-    {
-        if(_sentences.Count == 0)
+        base.EndDialogue();
+        if (_gameIsWon)
         {
-            EndDialogue();
-            return;
-        }
-        string sentence = _sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-    }
-
-    IEnumerator TypeSentence(string sentence)
-    {
-        _dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
-        {
-            _dialogueText.text += letter;
-            yield return null;
+            StartCoroutine(EndGame());
         }
     }
-
-    public void EndDialogue()
+    protected override void OnSentencesFinished()
     {
-        _boxAnim.SetBool("boxOpen", false);
-        StartCoroutine(EndGame());
+        _gameIsWon = true;
+        EndDialogue();
     }
 
     private IEnumerator EndGame()
@@ -67,4 +30,3 @@ public class DialogueManagerKing : MonoBehaviour
         _winMenu.WinGame();
     }
 }
-

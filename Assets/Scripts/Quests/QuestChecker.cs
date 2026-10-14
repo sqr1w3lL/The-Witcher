@@ -15,7 +15,7 @@ public class QuestChecker : MonoBehaviour
     private void Awake()
     {
         var trigger = GetComponent<DialogueTrigger>();
-        dialogueManager = trigger.dialogueManager;
+        dialogueManager = trigger.dialogueManager as DialogueManager;
         OnEnable();
     }
 

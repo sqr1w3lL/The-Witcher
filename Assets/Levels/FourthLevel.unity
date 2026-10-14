@@ -10926,6 +10926,18 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 554443726}
+    - target: {fileID: 1253611959564058536, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1158271402}
+    - target: {fileID: 1253611959564058536, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253611959564058536, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1295811633748379797, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
@@ -10938,10 +10950,34 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1639958015}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1212255626}
     - target: {fileID: 2030786803413009126, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 554250427}
+    - target: {fileID: 2170223403597474081, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1212255626}
+    - target: {fileID: 2170223403597474081, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 2170223403597474081, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManagerKing, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806687293281099211, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 554443726}
+    - target: {fileID: 2806687293281099211, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
     - target: {fileID: 3043754332413763219, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
@@ -10957,6 +10993,22 @@ PrefabInstance:
     - target: {fileID: 3162037549384223136, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: m_Name
       value: UIVillage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494146101512797898, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: taskCheckerSO
+      value: 
+      objectReference: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
+    - target: {fileID: 3494146101512797898, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogueAnimator
+      value: 
+      objectReference: {fileID: 1119504838}
+    - target: {fileID: 4043353908641137328, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1639958015}
+    - target: {fileID: 4043353908641137328, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
       objectReference: {fileID: 0}
     - target: {fileID: 4564364977278676729, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: m_Enabled
@@ -11022,6 +11074,30 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 688631147}
+    - target: {fileID: 5860925674378337799, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 554250427}
+    - target: {fileID: 5860925674378337799, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285797972140191909, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 688631147}
+    - target: {fileID: 6285797972140191909, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545774149607423326, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 301022966}
+    - target: {fileID: 6545774149607423326, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
     - target: {fileID: 6603911864563300303, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: player
       value: 
@@ -11041,7 +11117,7 @@ PrefabInstance:
     - target: {fileID: 8113757571636553406, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: dialogueAnimatorKing
       value: 
-      objectReference: {fileID: 1119504837}
+      objectReference: {fileID: 0}
     - target: {fileID: 8489884718327896566, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
@@ -11054,6 +11130,14 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 554250427}
+    - target: {fileID: 8504619506524525701, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1427682554}
+    - target: {fileID: 8504619506524525701, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14657,26 +14741,39 @@ PrefabInstance:
       objectReference: {fileID: 2097721270}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 7272391694406300545, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6261053032666805101, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1119504838}
   m_SourcePrefab: {fileID: 100100000, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
 --- !u!4 &1119504836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3845827767884367420, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
   m_PrefabInstance: {fileID: 1119504835}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1119504837 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7272391694406300545, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
+--- !u!1 &1119504837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6261053032666805101, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
   m_PrefabInstance: {fileID: 1119504835}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &1119504838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119504837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 970dc227f08fbe14cbfb64debd9f42db, type: 3}
+  m_Script: {fileID: 11500000, guid: e04c2cd07b502f848bccdb12523aee7b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueAnimatorKing
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAnimator
+  startAnim: {fileID: 818518620}
+  dialogueManager: {fileID: 1212255626}
+  canTalk: 0
 --- !u!1001 &1121530223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15115,6 +15212,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4237505841889802908, guid: 0c20bf7ceada3054da771f84318ebfa4, type: 3}
   m_PrefabInstance: {fileID: 1156180558}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1158271402 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+  m_PrefabInstance: {fileID: 818518581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ccf07c5711acb4ba56d9f702bdcb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
 --- !u!1001 &1161635427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70020,6 +70128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907a635d6fa87794f9d8f6411d621387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestBlocker
+--- !u!1 &1803258751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6709274230062434061, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+  m_PrefabInstance: {fileID: 818518581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1806237735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93506,7 +93619,7 @@ Tilemap:
       - {fileID: -205311114, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -1569301874, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1737792764, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 19, y: -4, z: 0}
@@ -93576,7 +93689,7 @@ Tilemap:
       - {fileID: 488699077, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -356817746, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 860539157, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: -2, z: 0}
@@ -93706,7 +93819,7 @@ Tilemap:
       - {fileID: -536944576, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1083154041, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1159888870, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 30, y: -1, z: 0}
@@ -93726,7 +93839,7 @@ Tilemap:
       - {fileID: 488699077, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -356817746, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 860539157, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 13, y: 0, z: 0}
@@ -93736,7 +93849,7 @@ Tilemap:
       - {fileID: 1318181101, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1759062162, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 372347338, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 14, y: 0, z: 0}
@@ -93806,7 +93919,7 @@ Tilemap:
       - {fileID: 26577699, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1605314452, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -2011858710, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 25, y: 2, z: 0}
@@ -93966,7 +94079,7 @@ Tilemap:
       - {fileID: 26577699, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1605314452, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -2011858710, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 23, y: 5, z: 0}
@@ -93986,7 +94099,7 @@ Tilemap:
       - {fileID: -495983743, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -1532365695, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1351277850, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: 6, z: 0}
@@ -94895,7 +95008,7 @@ PrefabInstance:
     - target: {fileID: 546347032432086861, guid: a57db4e5f6aeb1c4bb64e303bcf9d75c, type: 3}
       propertyPath: questUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1803258751}
     - target: {fileID: 1285029835899286022, guid: a57db4e5f6aeb1c4bb64e303bcf9d75c, type: 3}
       propertyPath: m_Name
       value: ActivatorQuest
@@ -94908,6 +95021,10 @@ PrefabInstance:
       propertyPath: questTask
       value: 
       objectReference: {fileID: 818518625}
+    - target: {fileID: 4463922168132261190, guid: a57db4e5f6aeb1c4bb64e303bcf9d75c, type: 3}
+      propertyPath: dialogueAnimator
+      value: 
+      objectReference: {fileID: 1119504838}
     - target: {fileID: 6147104703559086143, guid: a57db4e5f6aeb1c4bb64e303bcf9d75c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.29358
@@ -95203,6 +95320,10 @@ PrefabInstance:
       value: DialogueManagers
       objectReference: {fileID: 0}
     - target: {fileID: 5813564875209035457, guid: 18968510d6e992943b569b70aefd0340, type: 3}
+      propertyPath: boxAnim
+      value: 
+      objectReference: {fileID: 818518584}
+    - target: {fileID: 5813564875209035457, guid: 18968510d6e992943b569b70aefd0340, type: 3}
       propertyPath: _boxAnim
       value: 
       objectReference: {fileID: 818518584}
@@ -95215,13 +95336,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 818518618}
     - target: {fileID: 5813564875209035457, guid: 18968510d6e992943b569b70aefd0340, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 818518616}
+    - target: {fileID: 5813564875209035457, guid: 18968510d6e992943b569b70aefd0340, type: 3}
       propertyPath: _nameText
       value: 
       objectReference: {fileID: 818518616}
     - target: {fileID: 5813564875209035457, guid: 18968510d6e992943b569b70aefd0340, type: 3}
+      propertyPath: startAnim
+      value: 
+      objectReference: {fileID: 818518620}
+    - target: {fileID: 5813564875209035457, guid: 18968510d6e992943b569b70aefd0340, type: 3}
       propertyPath: _startAnim
       value: 
       objectReference: {fileID: 818518620}
+    - target: {fileID: 5813564875209035457, guid: 18968510d6e992943b569b70aefd0340, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 818518617}
     - target: {fileID: 5813564875209035457, guid: 18968510d6e992943b569b70aefd0340, type: 3}
       propertyPath: _dialogueText
       value: 

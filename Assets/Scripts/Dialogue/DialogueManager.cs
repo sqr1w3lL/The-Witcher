@@ -1,14 +1,8 @@
-using UnityEngine;
-using System.Collections.Generic;
-using System.Collections;
 using System;
+using UnityEngine;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : DialogueManagerBase
 {
-    [SerializeField] private Animator boxAnim;
-    [SerializeField] private Animator startAnim;
-    [SerializeField] private TMPro.TMP_Text dialogueText;
-    [SerializeField] private TMPro.TMP_Text nameText;
     [SerializeField] private ActivatorQuest activatorQuest;
     [SerializeField] private QuestBlocker questBlocker;
     [SerializeField] private QuestChecker questChecker;
@@ -16,54 +10,33 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TaskCheckerSO taskCheckerSO;
 
     public event EventHandler questIsStarted;
-    private Queue<string> _sentences;
+
     private bool _endQuest;
     private bool _questStarted;
 
-    private void Start()
+    protected override void PrepareDialogue(Dialogue dialogue)
     {
-        _sentences = new Queue<string>();
+        if (!activatorQuest.questStarted) return;
+
+        dialogue.sentences = questChecker.questIsCompleted
+            ? questBlocker.finalSentenceQuest
+            : questBlocker.sentenceQuest;
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    protected override void OnSentencesFinished()
     {
-        boxAnim.SetBool("boxOpen", true);
-        startAnim.SetBool("startOpen", false);
+        bool shouldStartQuest = !activatorQuest.questStarted && !_endQuest && !_questStarted;
+        EndDialogue();
 
-        nameText.text = dialogue.name;
-        _sentences.Clear();
-
-        if (activatorQuest.questStarted)
-        { 
-            if (!questChecker.questIsCompleted)
-                dialogue.sentences = questBlocker.sentenceQuest;
-            else
-                dialogue.sentences = questBlocker.finalSentenceQuest;
-        }
-
-        foreach (string sentence in dialogue.sentences)
-            _sentences.Enqueue(sentence);
-
-        DisplayNextSentence();
-    }
-
-    public void DisplayNextSentence()
-    {
-        if(_sentences.Count == 0)
+        if (shouldStartQuest)
         {
-            bool shouldStartQuest = !activatorQuest.questStarted && !_endQuest && !_questStarted;
-            EndDialogue();
-            if(shouldStartQuest)
-            {
-                questIsStarted?.Invoke(this, System.EventArgs.Empty);
-                _questStarted = true;
-            }
-            return;
+            questIsStarted?.Invoke(this, EventArgs.Empty);
+            _questStarted = true;
         }
-        string sentence = _sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-        
+    }
+
+    protected override void OnSentenceShown()
+    {
         if (!_endQuest)
             _questStarted = false;
 
@@ -71,19 +44,10 @@ public class DialogueManager : MonoBehaviour
             EndQuest();
     }
 
-    IEnumerator TypeSentence(string sentence)
+    public override void EndDialogue()
     {
-        dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
-        {
-            dialogueText.text += letter;
-            yield return null;
-        }
-    }
+        base.EndDialogue();
 
-    public void EndDialogue()
-    {
-        boxAnim.SetBool("boxOpen", false);
         if (_endQuest)
         {
             questChecker.enabled = false;
@@ -101,4 +65,3 @@ public class DialogueManager : MonoBehaviour
         _endQuest = true;
     }
 }
-

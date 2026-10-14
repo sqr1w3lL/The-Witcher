@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(PolygonCollider2D))]
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent (typeof(EnemyAI))]
-public class EnemyEntity : MonoBehaviour
+public class EnemyEntity : MonoBehaviour, IHealthSource
 {
     [SerializeField] private EnemySO enemySO;
     [SerializeField] private HealthBar healthBar;

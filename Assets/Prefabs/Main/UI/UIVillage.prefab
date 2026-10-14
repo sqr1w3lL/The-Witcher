@@ -52,9 +52,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3639191084957528396, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7104025972438458936, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
+    - {fileID: 2068095259241062429, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
+    - {fileID: 6016074525393692762, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
     m_RemovedGameObjects:
     - {fileID: 827496870438873946, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8903485837988863647, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1875925750659072563}
+    - targetCorrespondingSourceObject: {fileID: 8903485837988863647, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3494146101512797898}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
+--- !u!1 &6371240384946393211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8903485837988863647, guid: 6b6f3a85868efa24d97b8898894fe227, type: 3}
+  m_PrefabInstance: {fileID: 2586394868055428836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1875925750659072563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6371240384946393211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ccf07c5711acb4ba56d9f702bdcb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogueManager: {fileID: 0}
+  dialogue:
+    name: "\u0422\u043E\u0448\u0430"
+    sentences:
+    - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u043F\u043E\u043C\u043E\u0449\u044C "
+    - "\u041F\u0443\u0442\u043D\u0438\u043A"
+    - "\u0414\u0435\u0440\u0436\u0438 \u043F\u043E\u0434\u0430\u0440\u043E\u043A"
+--- !u!114 &3494146101512797898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6371240384946393211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368dfe46c763aba42a5da4f544959d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueKingAvaible
+  taskCheckerSO: {fileID: 0}
+  dialogueAnimatorKing: {fileID: 0}

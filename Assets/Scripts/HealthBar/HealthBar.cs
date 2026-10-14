@@ -4,15 +4,18 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Image healthBarFilling;
-    [SerializeField] private EnemyEntity enemyEntity;
+    [SerializeField] private MonoBehaviour healthSource;
     [SerializeField] private Gradient gradient;
 
+    private IHealthSource _source;
     private Camera _camera;
 
     private void Awake()
     {
-        if (enemyEntity != null)
-            enemyEntity.HealthChanged += OnHealthChanged;
+        _source = healthSource as IHealthSource;
+
+        if (_source != null)
+            _source.HealthChanged += OnHealthChanged;
 
         _camera = Camera.main;
     }
@@ -33,8 +36,8 @@ public class HealthBar : MonoBehaviour
 
     public void HealthBarOnDeath()
     {
-        if (enemyEntity != null)
-            enemyEntity.HealthChanged -= OnHealthChanged;
+        if (_source != null)
+            _source.HealthChanged -= OnHealthChanged;
 
         gameObject.SetActive(false);
     }
@@ -46,8 +49,8 @@ public class HealthBar : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (enemyEntity != null)
-            enemyEntity.HealthChanged -= OnHealthChanged;
+        if (_source != null)
+            _source.HealthChanged -= OnHealthChanged;
     }
 
 }

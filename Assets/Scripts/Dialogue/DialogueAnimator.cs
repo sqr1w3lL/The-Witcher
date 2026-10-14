@@ -2,33 +2,42 @@ using UnityEngine;
 
 public class DialogueAnimator : MonoBehaviour
 {
-    [SerializeField] private Animator startAnim;
-    [SerializeField] private DialogueManager dialogueManager;
+    private static readonly int StartOpenHash = Animator.StringToHash("startOpen");
 
-    private bool _canTalk = true;
+    [SerializeField] private Animator startAnim;
+    [SerializeField] private MonoBehaviour dialogueManager;
+
+    public bool canTalk = true;
+
+    private IDialogueManager _dialogueManager;
+
+    private void Awake()
+    {
+        _dialogueManager = dialogueManager as IDialogueManager;
+    }
 
     public void DisableTalk()
     {
-        _canTalk = false;
-        startAnim.SetBool("startOpen", false);
+        canTalk = false;
+        startAnim.SetBool(StartOpenHash, false);
 
         foreach (var col in GetComponentsInChildren<Collider2D>())
             col.enabled = false;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!_canTalk) return;
+        if (!canTalk) return;
 
-        if (collision.transform.TryGetComponent(out Player player))
-            startAnim.SetBool("startOpen", true);
+        if (collision.transform.TryGetComponent(out Player _))
+            startAnim.SetBool(StartOpenHash, true);
     }
-    public void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.transform.TryGetComponent(out Player player))
+        if (collision.transform.TryGetComponent(out Player _))
         {
-            startAnim.SetBool("startOpen", false);
-            dialogueManager.EndDialogue();
+            startAnim.SetBool(StartOpenHash, false);
+            _dialogueManager?.EndDialogue();
         }
     }
 }

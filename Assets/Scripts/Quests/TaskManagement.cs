@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TaskManagement : MonoBehaviour
@@ -7,6 +8,7 @@ public class TaskManagement : MonoBehaviour
     [SerializeField] private TaskCheckerSO taskCheckerSO;
     [SerializeField] private EnemyEntity enemyEntity;
     [SerializeField] private AnimalEntity animalEntity;
+    [SerializeField] private DialogueAnimator dialogueAnimator;
 
     private void Start()
     {
@@ -14,6 +16,14 @@ public class TaskManagement : MonoBehaviour
             enemyEntity.OnDeath += SkeletonIsDie;
         if (animalEntity != null)
             animalEntity.OnAnimalDeath += CapybaraIsDie;
+    }
+
+    private void Update()
+    {
+        if (taskCheckerSO.tasksCompletedCount == 6)
+        {
+            dialogueAnimator.canTalk = true;
+        }
     }
 
     public void FlowerIsPicked()

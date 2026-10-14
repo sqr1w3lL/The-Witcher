@@ -2,11 +2,18 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public DialogueManager dialogueManager;
+    public MonoBehaviour dialogueManager;
     [SerializeField] private Dialogue dialogue;
+
+    private IStartDialogue _dialogueManager;
+
+    private void Awake()
+    {
+        _dialogueManager = dialogueManager as IStartDialogue;
+    }
 
     public void TriggerDialogue()
     {
-        dialogueManager.StartDialogue(dialogue);
+        _dialogueManager?.StartDialogue(dialogue);
     }
 }

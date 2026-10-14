@@ -3,10 +3,10 @@ using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent (typeof(AnimalAI))]
-public class AnimalEntity : MonoBehaviour
+public class AnimalEntity : MonoBehaviour, IHealthSource
 {
     [SerializeField] private AnimalSO animalSO;
-    [SerializeField] private HealthBarCapybara healthBar;
+    [SerializeField] private HealthBar healthBar;
     [SerializeField] private float deathDestroyDelay = 2f;
 
     public event EventHandler OnAnimalTakeHit;
