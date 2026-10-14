@@ -20,7 +20,7 @@ public class TaskManagement : MonoBehaviour
 
     private void Update()
     {
-        if (taskCheckerSO.tasksCompletedCount >= 6)
+        if (taskCheckerSO.tasksCompletedCount >= 6 && dialogueAnimator != null)
         {
             dialogueAnimator.canTalk = true;
         }

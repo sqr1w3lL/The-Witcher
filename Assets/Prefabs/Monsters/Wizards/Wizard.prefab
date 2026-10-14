@@ -112,6 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAnimator
   startAnim: {fileID: 0}
   dialogueManager: {fileID: 0}
+  canTalk: 1
 --- !u!1 &4393511638430384930
 GameObject:
   m_ObjectHideFlags: 0

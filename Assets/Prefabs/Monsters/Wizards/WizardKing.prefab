@@ -52,32 +52,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3236601727493848963, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7272391694406300545}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
---- !u!1 &6261053032666805101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3236601727493848963, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
-  m_PrefabInstance: {fileID: 8793562569166228718}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7272391694406300545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6261053032666805101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 970dc227f08fbe14cbfb64debd9f42db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueAnimatorKing
-  startAnim: {fileID: 0}
-  dialogueManagerKing: {fileID: 0}
-  canTalk: 0

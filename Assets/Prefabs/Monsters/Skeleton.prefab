@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1888987120807815122}
   - component: {fileID: 1438584711823325057}
   - component: {fileID: 4518980008381182838}
-  - component: {fileID: 1613235676065752084}
   - component: {fileID: 929893456995993064}
+  - component: {fileID: 1613235676065752084}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -194,6 +194,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.2964827, y: 2.558651}
   m_EdgeRadius: 0
+--- !u!114 &929893456995993064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816649449748709356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09a8095dc998ed4e8ab866d3adc7611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyEntity
+  enemySO: {fileID: 11400000, guid: 6c070ec5c7fd47946b24a1e3f3f40d7c, type: 2}
+  healthBar: {fileID: 3169598792438101561}
+  maxHealth: 50
+  deathDestroyDelay: 5
 --- !u!114 &1613235676065752084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,22 +232,6 @@ MonoBehaviour:
   chasingSpeedMultiplier: 2
   attackingDistance: 2
   attackRate: 1
---- !u!114 &929893456995993064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816649449748709356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b09a8095dc998ed4e8ab866d3adc7611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyEntity
-  enemySO: {fileID: 11400000, guid: 6c070ec5c7fd47946b24a1e3f3f40d7c, type: 2}
-  healthBar: {fileID: 3169598792438101561}
-  maxHealth: 50
-  deathDestroyDelay: 5
 --- !u!1 &1868323746501248074
 GameObject:
   m_ObjectHideFlags: 0

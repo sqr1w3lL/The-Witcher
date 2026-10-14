@@ -47,10 +47,4 @@ public class HealthBar : MonoBehaviour
         gameObject.SetActive(true);
     }
 
-    private void OnDestroy()
-    {
-        if (_source != null)
-            _source.HealthChanged -= OnHealthChanged;
-    }
-
 }

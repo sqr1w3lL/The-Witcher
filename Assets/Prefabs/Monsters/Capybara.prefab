@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4969624361859162202}
   - component: {fileID: 4365916999704416601}
   - component: {fileID: 1790012594070850483}
-  - component: {fileID: 4406911293654360205}
   - component: {fileID: 1630244697709372838}
+  - component: {fileID: 4406911293654360205}
   - component: {fileID: 9086519083242143978}
   m_Layer: 0
   m_Name: Capybara
@@ -173,6 +173,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0.020618206, y: 0.39952695}
   m_Size: {x: 1.362376, y: 0.7835831}
   m_Direction: 1
+--- !u!114 &1630244697709372838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620334949937436262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd36e669588e7d45b54a903b9b4fd7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalEntity
+  animalSO: {fileID: 11400000, guid: eb07824f70b13f241be528b44f157e50, type: 2}
+  healthBar: {fileID: 5338936095338318341}
+  deathDestroyDelay: 2
 --- !u!114 &4406911293654360205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,21 +212,6 @@ MonoBehaviour:
   escapeDistance: 6
   isEscapingAnimal: 1
   onAttack: 0
---- !u!114 &1630244697709372838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620334949937436262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd36e669588e7d45b54a903b9b4fd7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimalEntity
-  animalSO: {fileID: 11400000, guid: eb07824f70b13f241be528b44f157e50, type: 2}
-  healthBar: {fileID: 5338936095338318341}
-  deathDestroyDelay: 2
 --- !u!114 &9086519083242143978
 MonoBehaviour:
   m_ObjectHideFlags: 0

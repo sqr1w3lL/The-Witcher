@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TaskCheckerSO
   m_EditorClassIdentifier: Assembly-CSharp::TaskCheckerSO
   flowerCount: 0
-  mushroomCount: 0
-  bushDeathCount: 0
-  skeletonCount: 0
-  sisterIsFoundCount: 0
-  capybaraCount: 0
+  mushroomCount: 1
+  bushDeathCount: 3
+  skeletonCount: 1
+  sisterIsFoundCount: 1
+  capybaraCount: 1
   questCompleted: 0
-  tasksCompletedCount: 0
+  tasksCompletedCount: 6
