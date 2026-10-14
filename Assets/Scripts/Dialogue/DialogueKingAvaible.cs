@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class DialogueKingAvaible : MonoBehaviour
 {
-    [SerializeField] private TaskCheckerSO _taskCheckerSO;
-    [SerializeField] private DialogueAnimatorKing _dialogueAnimatorKing;
+    [SerializeField] private TaskCheckerSO taskCheckerSO;
+    [SerializeField] private DialogueAnimatorKing dialogueAnimatorKing;
 
     private void Update()
     {
@@ -12,9 +12,9 @@ public class DialogueKingAvaible : MonoBehaviour
 
     private void AvaibleToSpeakWithKing()
     {
-        if (_taskCheckerSO.tasksCompletedCount != 6)
-            _dialogueAnimatorKing.canTalk = false;
-        else if (_taskCheckerSO.tasksCompletedCount == 6)
-            _dialogueAnimatorKing.canTalk = true;
+        if (taskCheckerSO.tasksCompletedCount == 6)
+            dialogueAnimatorKing.canTalk = true;
+        else
+            dialogueAnimatorKing.canTalk = false;
     }
 }

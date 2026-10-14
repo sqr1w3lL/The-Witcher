@@ -5,7 +5,7 @@ public class DialogueAnimatorKing : MonoBehaviour
     [SerializeField] private Animator startAnim;
     [SerializeField] private DialogueManagerKing dialogueManagerKing;
 
-    public bool canTalk = true;
+    public bool canTalk;
 
     public void DisableTalk()
     {

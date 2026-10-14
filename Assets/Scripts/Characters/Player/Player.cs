@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
     {
         transform.position = playerPosition.initialValue;
         maxHealth = playerHealthPoint.currentHealth;
-        playerCurrentHealth = maxHealth;
+        playerCurrentHealth = Mathf.RoundToInt(playerHealthPoint.percentageHealth * maxHealth);
 
         _canTakeDamage = true;
         _isAlive = true;
@@ -102,9 +102,12 @@ public class Player : MonoBehaviour
         if (_canTakeDamage && _isAlive)
         {
             _canTakeDamage = false;
-            playerCurrentHealth = Mathf.Max(0, playerCurrentHealth -= damage);
+
+            playerCurrentHealth = Mathf.Max(0, playerCurrentHealth - damage);
 
             float _currentHealthAsPercentage = (float)playerCurrentHealth / maxHealth;
+            playerHealthPoint.percentageHealth = _currentHealthAsPercentage;
+
             HeroHealthChanged?.Invoke(_currentHealthAsPercentage);
 
             _knockBack.GetKnockedBack(damageSource);

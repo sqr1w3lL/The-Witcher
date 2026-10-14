@@ -33,8 +33,6 @@ public class LevelChanger : MonoBehaviour
     public void OnFadeComplete()
     {
         playerStorage.initialValue = nextLevel.position;
-
-        healthStorage.currentHealth = player.playerCurrentHealth;
         
         healthStorage.percentageHealth = hpBarHero.currentHealthAsPercentage;
 

@@ -19,7 +19,6 @@ public class HealthBarCapybara : MonoBehaviour
 
     private void OnHealthChanged(float valueAsPercantage)
     {
-        Debug.Log(valueAsPercantage);
         healthBarFilling.fillAmount = valueAsPercantage;
         healthBarFilling.color = gradient.Evaluate(valueAsPercantage);
     }

@@ -785,6 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2072a38ed8f2e05429972b79fe6f7057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActiveWeapon
+  sword: {fileID: 1100012499299148940}
 --- !u!1 &6786308153360895657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,9 +1112,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   movingSpeed: 5
-  maxHealth: 10
+  maxHealth: 20
   damageRecoveryTime: 1.5
   dashSpeed: 4
+  deathScreen: {fileID: 0}
+  playerPosition: {fileID: 11400000, guid: e1d182cdf189dde49a2435bc8d003be0, type: 2}
+  playerHealthPoint: {fileID: 11400000, guid: bece9be7c31141941a806154fe3bd425, type: 2}
+  trailRenderer: {fileID: 9148896500007628053}
+  pauseMenu: {fileID: 0}
+  dashSound: {fileID: 8510888399745245043}
   isPickingItem: 0
   playerCurrentHealth: 0
 --- !u!114 &7472881451409534416
@@ -1142,7 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abe0fd8d0fe8704db64dbeaaf5363ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  _inventoryStorage: {fileID: 0}
+  inventoryStorage: {fileID: 11400000, guid: 736a44b627c31d1499306cdd7a9c5e25, type: 2}
   slots:
   - {fileID: 0}
   - {fileID: 0}
@@ -1169,6 +1176,7 @@ MonoBehaviour:
     tilemap: {fileID: 0}
     tile: {fileID: 11400000, guid: 4471a6ac89676e040a8f0c4cdca41cdd, type: 2}
     footstepClip: {fileID: 8300000, guid: 478c33c53c10dd54b9bb7db1969b7ef7, type: 3}
+  audioSource: {fileID: 7489238842781477119}
 --- !u!114 &8510888399745245043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,6 +1189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76ec70c8c6285e042b9dae343219c8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashSound
+  audioSource: {fileID: 4828143601001111958}
 --- !u!1001 &5302656250843815180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1189,6 +1198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6438015373148331684}
     m_Modifications:
+    - target: {fileID: 1708331929565392753, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 1100012499299148940}
     - target: {fileID: 3567667176430867450, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.65
@@ -1229,6 +1242,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -160
       objectReference: {fileID: 0}
+    - target: {fileID: 6390682266041210346, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 1100012499299148940}
     - target: {fileID: 8232369252884704436, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1245,6 +1262,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 88402839215234700}
   m_SourcePrefab: {fileID: 100100000, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}
+--- !u!114 &1100012499299148940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5103376940152912256, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}
+  m_PrefabInstance: {fileID: 5302656250843815180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3723866ea7184043900177946a8d0f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sword
 --- !u!1 &2862687373494286412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7938895324093064512, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}
@@ -1262,6 +1290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73915e6bf8f07459c95dd5ad0a69a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitBottomSound
+  hitDown: {fileID: 6471624071619358512}
+  hitUp: {fileID: 5589276097818599839}
 --- !u!4 &8652601974257569526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3567667176430867450, guid: 208296f7edf5d6645b153b7ed8cd3ee9, type: 3}

@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent (typeof(EnemyAI))]
 public class EnemyEntity : MonoBehaviour
 {
-    private EnemySO _enemySO;
+    [SerializeField] private EnemySO enemySO;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private float deathDestroyDelay = 2f;
@@ -25,16 +25,15 @@ public class EnemyEntity : MonoBehaviour
 
     private void Awake()
     {
-        _enemySO = Resources.Load<EnemySO>("ScriptableObjects/SkeletonSO");
         _polygonCollider2D = GetComponent<PolygonCollider2D>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _enemyAI = GetComponent<EnemyAI>();
-        _enemySO.enemyHealth = maxHealth;
+        enemySO.enemyHealth = maxHealth;
     }
 
     private void Start()
     {
-        _currentHealth = _enemySO.enemyHealth;
+        _currentHealth = enemySO.enemyHealth;
     }
 
     public void TakeDamage(int damage)
@@ -66,7 +65,7 @@ public class EnemyEntity : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.transform.TryGetComponent(out Player player))
-            player.TakeDamage(transform, _enemySO.enemyDamageAmount);
+            player.TakeDamage(transform, enemySO.enemyDamageAmount);
     }
     
     private void DetectDeath()

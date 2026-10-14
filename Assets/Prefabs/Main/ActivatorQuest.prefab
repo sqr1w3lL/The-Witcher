@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivatorQuest
   questUI: {fileID: 0}
+  questValue: {fileID: 11400000, guid: b5bf2bdbe13fa8147b507082c1467d82, type: 2}
   questStarted: 0
 --- !u!114 &4463922168132261190
 MonoBehaviour:
@@ -61,3 +62,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TaskManagement
   questTask: {fileID: 0}
   questName: {fileID: 0}
+  taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
+  enemyEntity: {fileID: 0}
+  animalEntity: {fileID: 0}

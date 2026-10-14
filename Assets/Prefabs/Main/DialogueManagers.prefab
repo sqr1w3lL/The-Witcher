@@ -82,15 +82,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8a6c8ce7b0a3409c55b81194bcb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  boxAnim: {fileID: 0}
+  startAnim: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}
   activatorQuest: {fileID: 0}
   questBlocker: {fileID: 0}
   questChecker: {fileID: 0}
   dialogueAnimator: {fileID: 0}
-  taskCheckerSO: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  boxAnim: {fileID: 0}
-  startAnim: {fileID: 0}
+  taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
 --- !u!1 &2163694318914164616
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7443350535890347389}
+  - component: {fileID: 5813564875209035457}
   m_Layer: 0
   m_Name: DialogueManager7
   m_TagString: Untagged
@@ -122,6 +123,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7405024370111799635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5813564875209035457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2163694318914164616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614b8085af270fe4c89ad74e4b3c8363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManagerKing
+  _winGame: {fileID: 0}
+  _winMenu: {fileID: 0}
+  _dialogueText: {fileID: 0}
+  _nameText: {fileID: 0}
+  _boxAnim: {fileID: 0}
+  _startAnim: {fileID: 0}
 --- !u!1 &2705231471736239510
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,15 +185,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8a6c8ce7b0a3409c55b81194bcb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  boxAnim: {fileID: 0}
+  startAnim: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}
   activatorQuest: {fileID: 0}
   questBlocker: {fileID: 0}
   questChecker: {fileID: 0}
   dialogueAnimator: {fileID: 0}
-  taskCheckerSO: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  boxAnim: {fileID: 0}
-  startAnim: {fileID: 0}
+  taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
 --- !u!1 &3272976637040773547
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,15 +238,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8a6c8ce7b0a3409c55b81194bcb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  boxAnim: {fileID: 0}
+  startAnim: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}
   activatorQuest: {fileID: 0}
   questBlocker: {fileID: 0}
   questChecker: {fileID: 0}
   dialogueAnimator: {fileID: 0}
-  taskCheckerSO: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  boxAnim: {fileID: 0}
-  startAnim: {fileID: 0}
+  taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
 --- !u!1 &3547898592437631807
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,15 +291,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8a6c8ce7b0a3409c55b81194bcb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  boxAnim: {fileID: 0}
+  startAnim: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}
   activatorQuest: {fileID: 0}
   questBlocker: {fileID: 0}
   questChecker: {fileID: 0}
   dialogueAnimator: {fileID: 0}
-  taskCheckerSO: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  boxAnim: {fileID: 0}
-  startAnim: {fileID: 0}
+  taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
 --- !u!1 &6161640872947021615
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,15 +344,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8a6c8ce7b0a3409c55b81194bcb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  boxAnim: {fileID: 0}
+  startAnim: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}
   activatorQuest: {fileID: 0}
   questBlocker: {fileID: 0}
   questChecker: {fileID: 0}
   dialogueAnimator: {fileID: 0}
-  taskCheckerSO: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  boxAnim: {fileID: 0}
-  startAnim: {fileID: 0}
+  taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
 --- !u!1 &7406038925546614841
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,12 +397,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8a6c8ce7b0a3409c55b81194bcb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  boxAnim: {fileID: 0}
+  startAnim: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}
   activatorQuest: {fileID: 0}
   questBlocker: {fileID: 0}
   questChecker: {fileID: 0}
   dialogueAnimator: {fileID: 0}
-  taskCheckerSO: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  boxAnim: {fileID: 0}
-  startAnim: {fileID: 0}
+  taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
