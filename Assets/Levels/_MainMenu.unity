@@ -5529,6 +5529,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   inventoryStorage: {fileID: 11400000, guid: 736a44b627c31d1499306cdd7a9c5e25, type: 2}
   playerStorage: {fileID: 11400000, guid: e1d182cdf189dde49a2435bc8d003be0, type: 2}
+  healthSO: {fileID: 11400000, guid: bece9be7c31141941a806154fe3bd425, type: 2}
+  questSO: {fileID: 11400000, guid: b5bf2bdbe13fa8147b507082c1467d82, type: 2}
+  taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
 --- !u!1 &2016722030
 GameObject:
   m_ObjectHideFlags: 0

@@ -137,6 +137,7 @@ public class Player : MonoBehaviour
         if(!_isDashing)
             StartCoroutine(DashRoutine());
     }
+
     private void HandleMovement()
     {
         _rigidBody2D.MovePosition(_rigidBody2D.position + _inputVector * (movingSpeed * Time.fixedDeltaTime));
