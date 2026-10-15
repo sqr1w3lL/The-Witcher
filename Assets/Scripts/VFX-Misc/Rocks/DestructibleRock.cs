@@ -21,7 +21,7 @@ public class DestructibleRock : MonoBehaviour
             (bush = GetComponentInParent<BushDestroyed>()) != null)
             bush.BushDead();
 
-        NavMeshSurfaceManagement.Instance?.RebakeNavMeshSurface();
+        NavMeshSurfaceManagement.Instance?.RebakeNavMeshSurface(transform.position);
 
         Destroy(gameObject);
     }
