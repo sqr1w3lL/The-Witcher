@@ -35,12 +35,12 @@ public class TaskManagement : MonoBehaviour
                 taskCheckerSO.flowerCount++;
                 questTask.text = "Найти цветочки: 1/3";
             }
-            else if (taskCheckerSO.flowerCount == 1)
+            if (taskCheckerSO.flowerCount == 1)
             {
                 taskCheckerSO.flowerCount++;
                 questTask.text = "Найти цветочки: 2/3";
             }
-            else if (taskCheckerSO.flowerCount == 2)
+            if (taskCheckerSO.flowerCount == 2)
             {
                 taskCheckerSO.flowerCount++;
                 questTask.text = "Найти цветочки: 3/3";
@@ -56,12 +56,12 @@ public class TaskManagement : MonoBehaviour
             taskCheckerSO.flowerCount--;
             questTask.text = "Найти цветочки: 2/3";
         }
-        else if (taskCheckerSO.flowerCount == 2)
+        if (taskCheckerSO.flowerCount == 2)
         {
             taskCheckerSO.flowerCount--;
             questTask.text = "Найти цветочки: 1/3";
         }
-        else if (taskCheckerSO.flowerCount == 1)
+        if (taskCheckerSO.flowerCount == 1)
         {
             taskCheckerSO.flowerCount--;
             questTask.text = "Найти цветочки: 0/3";
@@ -77,7 +77,7 @@ public class TaskManagement : MonoBehaviour
                 taskCheckerSO.mushroomCount++;
                 questTask.text = "Найти грибочки: 1/2";
             }
-            else if (taskCheckerSO.mushroomCount == 1)
+            if (taskCheckerSO.mushroomCount == 1)
             {
                 taskCheckerSO.mushroomCount++;
                 questTask.text = "Найти грибочки: 2/2";
@@ -93,7 +93,7 @@ public class TaskManagement : MonoBehaviour
             taskCheckerSO.mushroomCount--;
             questTask.text = "Найти грибочки: 1/2";
         }
-        else if (taskCheckerSO.mushroomCount == 1)
+        if (taskCheckerSO.mushroomCount == 1)
         {
             taskCheckerSO.mushroomCount--;
             questTask.text = "Найти грибочки: 0/2";
@@ -107,7 +107,7 @@ public class TaskManagement : MonoBehaviour
             taskCheckerSO.bushDeathCount++;
             if (taskCheckerSO.bushDeathCount == 0)
                 questTask.text = "Срубить кусты: 1/2";
-            else if (taskCheckerSO.bushDeathCount == 1)
+            if (taskCheckerSO.bushDeathCount == 1)
             {
                 questTask.text = "Срубить кусты: 2/2";
                 taskCheckerSO.questCompleted = true;

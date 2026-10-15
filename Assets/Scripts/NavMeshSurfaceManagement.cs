@@ -8,6 +8,7 @@ public class NavMeshSurfaceManagement : MonoBehaviour
 
     private NavMeshSurface _navMeshSurface;
     private Coroutine _rebakeCoroutine;
+    private float _rebakeDelay = 0.5f;
 
     private void Awake()
     {
@@ -18,14 +19,14 @@ public class NavMeshSurfaceManagement : MonoBehaviour
 
     public void RebakeNavMeshSurface()
     {
-        _rebakeCoroutine ??= StartCoroutine(RebakeNextFrame());
+        _rebakeCoroutine ??= StartCoroutine(RebakeRoutine());
     }
     
-    private IEnumerator RebakeNextFrame()
+    private IEnumerator RebakeRoutine()
     {
-        yield return new WaitForEndOfFrame();
-
-        _navMeshSurface.BuildNavMesh();
+        yield return new WaitForSeconds(_rebakeDelay);
+        var op = _navMeshSurface.BuildNavMeshAsync();
+        while (!op.isDone) yield return null;
         _rebakeCoroutine = null;
     }
 }

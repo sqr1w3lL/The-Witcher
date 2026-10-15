@@ -209,7 +209,7 @@ MonoBehaviour:
   enemySO: {fileID: 11400000, guid: 6c070ec5c7fd47946b24a1e3f3f40d7c, type: 2}
   healthBar: {fileID: 3169598792438101561}
   maxHealth: 50
-  deathDestroyDelay: 5
+  deathDestroyDelay: 3
 --- !u!114 &1613235676065752084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
   healthBarFilling: {fileID: 1891505710179563070}
-  healthSource: {fileID: 1613235676065752084}
+  healthSource: {fileID: 929893456995993064}
   gradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}

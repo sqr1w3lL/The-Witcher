@@ -13,22 +13,17 @@ public class DestructibleRock : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<Sword>())
-        {
-            OnDestructibleTakeDamage?.Invoke(this, EventArgs.Empty);
+        if (!collision.TryGetComponent<Sword>(out _)) return;
 
-            if (NavMeshSurfaceManagement.Instance != null)
-            {
-                NavMeshSurfaceManagement.Instance.RebakeNavMeshSurface();
-            }
+        OnDestructibleTakeDamage?.Invoke(this, EventArgs.Empty);
 
-            BushDestroyed bush = GetComponentInParent<BushDestroyed>();
-            if (bush != null)
-                _bushDestroyed.BushDead();
+        if (TryGetComponent<BushDestroyed>(out var bush) ||
+            (bush = GetComponentInParent<BushDestroyed>()) != null)
+            bush.BushDead();
 
-            Destroy(gameObject);
-        }
+        NavMeshSurfaceManagement.Instance?.RebakeNavMeshSurface();
+
+        Destroy(gameObject);
     }
-
 
 }
