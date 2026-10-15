@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigidBody2D;
     private KnockBack _knockBack;
     private Camera _mainCamera;
+    private PlayerInput _input;
 
     private readonly float _minMovingSpeed = 0.1f;
     private float _initialMovingSpeed;
@@ -66,15 +67,16 @@ public class Player : MonoBehaviour
         _canTakeDamage = true;
         _isAlive = true;
 
-        PlayerInput.Instance.OnPlayerAttack += Player_OnPlayerAttack;
-        PlayerInput.Instance.OnPlayerDash += Player_OnPlayerDash;
-        PlayerInput.Instance.OnPlayerPause += Player_OnPlayerPause;
-        PlayerInput.Instance.OnPlayerPickItem += Player_OnPlayerPickItem;
+        _input = PlayerInput.Instance;
+        _input.OnPlayerAttack += Player_OnPlayerAttack;
+        _input.OnPlayerDash += Player_OnPlayerDash;
+        _input.OnPlayerPause += Player_OnPlayerPause;
+        _input.OnPlayerPickItem += Player_OnPlayerPickItem;
     }
 
     private void Update()
     {
-        _inputVector = PlayerInput.Instance.GetMovementVector();
+        _inputVector = _input.GetMovementVector();
     }
 
     private void FixedUpdate()
@@ -126,7 +128,7 @@ public class Player : MonoBehaviour
         {
             _isAlive = false;
             _knockBack.StopKnockBackMovement();
-            PlayerInput.Instance.DisableMovement();
+            _input.DisableMovement();
             HeroHealthChanged?.Invoke(0);
             OnPlayerDeath?.Invoke(this, EventArgs.Empty);
             deathScreen.SetDeathScreen();
@@ -189,6 +191,19 @@ public class Player : MonoBehaviour
     private void Player_OnPlayerPickItem(object sender, System.EventArgs e)
     {
         isPickingItem = true;
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
+
+        if (_input == null) return;
+
+        _input.OnPlayerAttack -= Player_OnPlayerAttack;
+        _input.OnPlayerDash -= Player_OnPlayerDash;
+        _input.OnPlayerPause -= Player_OnPlayerPause;
+        _input.OnPlayerPickItem -= Player_OnPlayerPickItem;
     }
 
 }

@@ -14,7 +14,6 @@ public class ActivatorQuest : MonoBehaviour
 
     public void ActivateQuest(bool isActive)
     {
-        Debug.Log(isActive);
         questUI.SetActive(isActive);
         questStarted = isActive;
     }

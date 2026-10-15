@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
-        healthSO.currentHealth = 100;
+        healthSO.currentHealth = 20;
         healthSO.percentageHealth = 1;
 
         questSO.questIsActive = false;
@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour
 
         playerStorage.initialValue.Set(-18, -8, 0);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("FirstLevel");
     }
 
     public void ExitGame()

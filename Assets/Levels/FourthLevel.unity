@@ -11123,9 +11123,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1639958015}
     - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogue.name
+      value: "\u0412\u043B\u0430\u0434\u044B\u043A\u0430 \u0434\u0435\u0440\u0435\u0432\u043D\u0438 Teltmit"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1212255626}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[0]'
+      value: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439 \u0434\u043E\u0431\u0440\u044B\u0439 \u043C\u043E\u043B\u043E\u0434\u0435\u0446."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[1]'
+      value: "\u0412\u0438\u0436\u0443 \u0442\u044B \u0442\u0443\u0442 \u0434\u0430\u0432\u043D\u043E \u043E\u0448\u0438\u0432\u0430\u0435\u0448\u044C\u0441\u044F. \u0412\u0441\u0435\u043C \u0441 \u0438\u0445 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430\u043C\u0438 \u0432\u044B\u0440\u0443\u0447\u0430\u0435\u0448\u044C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[2]'
+      value: "\u042D\u0442\u043E \u043F\u043E\u0445\u0432\u0430\u043B\u044C\u043D\u043E-\u043F\u043E\u0445\u0432\u0430\u043B\u044C\u043D\u043E."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[3]'
+      value: "\u0417\u0430 \u0442\u0430\u043A\u043E\u0435, \u043F\u043E\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F \u043D\u0430\u0433\u0440\u0430\u0434\u0430. \u0414\u043E\u0441\u0442\u043E\u0439\u043D\u0430\u044F \u043D\u0430\u0433\u0440\u0430\u0434\u0430."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[4]'
+      value: "\u0422\u0430\u043A \u0432\u043D\u0435\u043C\u043B\u0438 \u0436\u0435, \u044F \u0434\u0430\u0440\u0443\u044E \u0442\u0435\u0431\u0435 \u0431\u043B\u0430\u0433\u043E\u0441\u043B\u043E\u0432\u043B\u0435\u043D\u0438\u0435."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[5]'
+      value: "\u0413\u0430\u0434\u0434\u044D\u043C!"
+      objectReference: {fileID: 0}
     - target: {fileID: 2030786803413009126, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: dialogueManager
       value: 
@@ -11173,7 +11205,7 @@ PrefabInstance:
     - target: {fileID: 3494146101512797898, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: dialogueAnimator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1119504837}
     - target: {fileID: 4043353908641137328, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -15019,6 +15051,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3845827767884367420, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
   m_PrefabInstance: {fileID: 1119504835}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1119504837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1458537278751451598, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
+  m_PrefabInstance: {fileID: 1119504835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04c2cd07b502f848bccdb12523aee7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAnimator
 --- !u!1001 &1121530223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94038,7 +94081,7 @@ Tilemap:
       - {fileID: 1318181101, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1759062162, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 372347338, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 17, y: -3, z: 0}
@@ -94078,7 +94121,7 @@ Tilemap:
       - {fileID: 488699077, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -356817746, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 860539157, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: -2, z: 0}
@@ -94108,7 +94151,7 @@ Tilemap:
       - {fileID: -930931601, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1213832210, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1867485266, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 23, y: -2, z: 0}
@@ -94158,7 +94201,7 @@ Tilemap:
       - {fileID: -205311114, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -1569301874, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1737792764, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 28, y: -2, z: 0}
@@ -94198,7 +94241,7 @@ Tilemap:
       - {fileID: 1318181101, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1759062162, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 372347338, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: -1, z: 0}
@@ -94218,7 +94261,7 @@ Tilemap:
       - {fileID: -930931601, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1213832210, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1867485266, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 31, y: -1, z: 0}
@@ -94228,7 +94271,7 @@ Tilemap:
       - {fileID: 488699077, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -356817746, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 860539157, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 13, y: 0, z: 0}
@@ -94258,7 +94301,7 @@ Tilemap:
       - {fileID: 1678261311, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -1582050021, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1933878181, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 12, y: 1, z: 0}
@@ -94308,7 +94351,7 @@ Tilemap:
       - {fileID: 26577699, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1605314452, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -2011858710, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 25, y: 2, z: 0}
@@ -95421,7 +95464,7 @@ PrefabInstance:
     - target: {fileID: 4463922168132261190, guid: a57db4e5f6aeb1c4bb64e303bcf9d75c, type: 3}
       propertyPath: dialogueAnimator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1119504837}
     - target: {fileID: 6147104703559086143, guid: a57db4e5f6aeb1c4bb64e303bcf9d75c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.29358

@@ -8,6 +8,8 @@ public class PlayerVisual : MonoBehaviour
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
     private FlashBlink _flashBlink;
+    private Player _player;
+    private PlayerInput _input;
 
     private void Awake()
     {
@@ -18,13 +20,19 @@ public class PlayerVisual : MonoBehaviour
 
     private void Start()
     {
-        Player.Instance.OnPlayerDeath += Player_OnPlayerDeath;
+        _player = Player.Instance;
+        _input = PlayerInput.Instance;
+
+        _player.OnPlayerDeath += Player_OnPlayerDeath;
     }
 
     private void Update()
     {
-        _animator.SetBool(Running, Player.Instance.IsRunning());
-        if(Player.Instance.IsAlive())
+        if (_player == null) return;
+
+        _animator.SetBool(Running, _player.IsRunning());
+
+        if (_player.IsAlive())
             AdjustPlayerFacingDirection();
     }
 
@@ -34,17 +42,19 @@ public class PlayerVisual : MonoBehaviour
         _flashBlink.StopBlinking();
     }
 
-    private void AdjustPlayerFacingDirection ()
+    private void AdjustPlayerFacingDirection()
     {
-        Vector3 mousePos = PlayerInput.Instance.GetMousePosition();
-        Vector3 playerPosition = Player.Instance.GetPlayerScreenPosition();
+        if (_input == null) return;
+
+        Vector3 mousePos = _input.GetMousePosition();
+        Vector3 playerPosition = _player.GetPlayerScreenPosition();
 
         _spriteRenderer.flipX = mousePos.x < playerPosition.x;
-
     }
 
     private void OnDestroy()
     {
-        Player.Instance.OnPlayerDeath -= Player_OnPlayerDeath;
+        if (_player != null)
+            _player.OnPlayerDeath -= Player_OnPlayerDeath;
     }
 }

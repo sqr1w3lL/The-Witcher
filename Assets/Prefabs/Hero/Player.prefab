@@ -963,6 +963,7 @@ GameObject:
   - component: {fileID: 1467222575324398365}
   - component: {fileID: 6516765394743472962}
   - component: {fileID: 8510888399745245043}
+  - component: {fileID: 1744300362849661521}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1113,9 +1114,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   movingSpeed: 5
   maxHealth: 20
-  damageRecoveryTime: 1.5
+  damageRecoveryTime: 1
   dashSpeed: 4
-  deathScreen: {fileID: 0}
+  deathScreen: {fileID: 1744300362849661521}
   playerPosition: {fileID: 11400000, guid: e1d182cdf189dde49a2435bc8d003be0, type: 2}
   playerHealthPoint: {fileID: 11400000, guid: bece9be7c31141941a806154fe3bd425, type: 2}
   trailRenderer: {fileID: 9148896500007628053}
@@ -1190,6 +1191,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashSound
   audioSource: {fileID: 4828143601001111958}
+--- !u!114 &1744300362849661521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7630114014308017314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab96e5c55ca90024da03124b3e2f0829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathScreen
+  deathScreen: {fileID: 0}
 --- !u!1001 &5302656250843815180
 PrefabInstance:
   m_ObjectHideFlags: 0

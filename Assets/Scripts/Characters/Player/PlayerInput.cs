@@ -54,10 +54,7 @@ public class PlayerInput : MonoBehaviour
     public void WinGame()
     {
         _playerInputActions.Disable();
-        _playerInputActions.Combat.Attack.started -= PlayerAttack_started;
-        _playerInputActions.Player.Dash.performed -= PlayerDashPerformed;
-        _playerInputActions.Player.Pause.performed -= PlayerPausePerformed;
-        _playerInputActions.Player.PickItem.performed -= PlayerPickItemPerformed;
+        UnsubscribeActions();
     }
 
     private void PlayerPausePerformed(InputAction.CallbackContext obj)
@@ -68,6 +65,31 @@ public class PlayerInput : MonoBehaviour
     private void PlayerAttack_started(InputAction.CallbackContext obj)
     {
         OnPlayerAttack?.Invoke(this, EventArgs.Empty);
+    }
+
+    private void UnsubscribeActions()
+    {
+        if (_playerInputActions == null) return;
+
+        _playerInputActions.Combat.Attack.started -= PlayerAttack_started;
+        _playerInputActions.Player.Dash.performed -= PlayerDashPerformed;
+        _playerInputActions.Player.Pause.performed -= PlayerPausePerformed;
+        _playerInputActions.Player.PickItem.performed -= PlayerPickItemPerformed;
+    }
+
+    private void OnDestroy()
+    {
+        UnsubscribeActions();
+
+        if (_playerInputActions != null)
+        {
+            _playerInputActions.Disable();
+            _playerInputActions.Dispose();
+            _playerInputActions = null;
+        }
+
+        if (Instance == this)
+            Instance = null;
     }
 
 }
