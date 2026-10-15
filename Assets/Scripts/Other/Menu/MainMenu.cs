@@ -9,9 +9,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private HealthValue healthSO;
     [SerializeField] private QuestValue questSO;
     [SerializeField] private TaskCheckerSO taskCheckerSO;
+    [SerializeField] private NpcTalkStateSO talkState;
 
     private void Awake()
     {
+        talkState.ResetAll();
         healthSO.currentHealth = 20;
         healthSO.percentageHealth = 1;
 

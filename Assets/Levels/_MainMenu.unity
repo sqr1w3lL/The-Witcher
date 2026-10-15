@@ -5532,6 +5532,7 @@ MonoBehaviour:
   healthSO: {fileID: 11400000, guid: bece9be7c31141941a806154fe3bd425, type: 2}
   questSO: {fileID: 11400000, guid: b5bf2bdbe13fa8147b507082c1467d82, type: 2}
   taskCheckerSO: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
+  talkState: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
 --- !u!1 &2016722030
 GameObject:
   m_ObjectHideFlags: 0

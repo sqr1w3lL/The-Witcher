@@ -6,8 +6,12 @@ public class DialogueAnimator : MonoBehaviour
 
     [SerializeField] private Animator startAnim;
     [SerializeField] private MonoBehaviour dialogueManager;
+    [SerializeField] private NpcTalkStateSO talkState;
+    [SerializeField] private string npcId;
 
     public bool canTalk = true;
+
+    public string NpcId => npcId;
 
     private IDialogueManager _dialogueManager;
 
@@ -16,7 +20,19 @@ public class DialogueAnimator : MonoBehaviour
         _dialogueManager = dialogueManager as IDialogueManager;
     }
 
+    private void Start()
+    {
+        if (talkState != null && talkState.IsDisabled(npcId))
+            ApplyDisabled();
+    }
+
     public void DisableTalk()
+    {
+        talkState?.Disable(npcId);
+        ApplyDisabled();
+    }
+
+    private void ApplyDisabled()
     {
         canTalk = false;
         startAnim.SetBool(StartOpenHash, false);

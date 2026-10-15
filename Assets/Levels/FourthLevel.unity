@@ -1215,14 +1215,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1608231979}
     m_Modifications:
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: taskManagement
-      value: 
-      objectReference: {fileID: 2097721270}
     - target: {fileID: 3236601727493848963, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: m_Name
       value: WizardFifth
@@ -1272,13 +1264,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1639958015}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: npcId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: startAnim
       value: 
       objectReference: {fileID: 818518598}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: talkState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1639958015}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: taskManagement
+      value: 
+      objectReference: {fileID: 2097721270}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3838,19 +3846,19 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -28.078333, y: 20.949327}
-      - {x: -29.520697, y: 21.121595}
-      - {x: -32.033432, y: 21.058798}
-      - {x: -32.084496, y: 16.589176}
-      - {x: -31.927975, y: 10.917655}
-      - {x: -31.584606, y: -22.437347}
-      - {x: -30.470402, y: -22.121307}
+    - - {x: -28.204458, y: 20.129507}
+      - {x: -29.791779, y: 20.105042}
+      - {x: -30.597385, y: 19.941875}
+      - {x: -30.695204, y: 16.724716}
+      - {x: -30.640337, y: 10.917655}
+      - {x: -30.58289, y: -22.498676}
+      - {x: -29.69356, y: -22.468842}
       - {x: -29.177246, y: -22.34896}
       - {x: -27.862354, y: -22.371647}
       - {x: -24.799713, y: -22.502686}
       - {x: 39.502014, y: -22.557297}
       - {x: 39.903824, y: 3.6921237}
-      - {x: 40.06594, y: 21.018599}
+      - {x: 39.883083, y: 20.195742}
   m_UseDelaunayMesh: 1
 --- !u!1001 &282997324
 PrefabInstance:
@@ -11111,6 +11119,10 @@ PrefabInstance:
       value: DialogueTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1295811633748379797, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: activeQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 19e031f766554c348a423c7fd01b9b20, type: 2}
+    - target: {fileID: 1295811633748379797, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1486106415}
@@ -11122,6 +11134,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1639958015}
+    - target: {fileID: 1295811633748379797, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogueAnimator
+      value: 
+      objectReference: {fileID: 83189888}
     - target: {fileID: 1875925750659072563, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: dialogue.name
       value: "\u0412\u043B\u0430\u0434\u044B\u043A\u0430 \u0434\u0435\u0440\u0435\u0432\u043D\u0438 Teltmit"
@@ -11183,6 +11199,10 @@ PrefabInstance:
       value: DisplayNextSentence
       objectReference: {fileID: 0}
     - target: {fileID: 3043754332413763219, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: activeQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 19e031f766554c348a423c7fd01b9b20, type: 2}
+    - target: {fileID: 3043754332413763219, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1575150633}
@@ -11194,6 +11214,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1427682554}
+    - target: {fileID: 3043754332413763219, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogueAnimator
+      value: 
+      objectReference: {fileID: 1697381424}
     - target: {fileID: 3162037549384223136, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: m_Name
       value: UIVillage
@@ -11235,6 +11259,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1212255626}
     - target: {fileID: 4786257296073495169, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: activeQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 19e031f766554c348a423c7fd01b9b20, type: 2}
+    - target: {fileID: 4786257296073495169, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1070340666}
@@ -11246,6 +11274,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 554443726}
+    - target: {fileID: 4786257296073495169, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogueAnimator
+      value: 
+      objectReference: {fileID: 1211002090}
     - target: {fileID: 4869386244935658664, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questSO
       value: 
@@ -11255,6 +11287,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: bece9be7c31141941a806154fe3bd425, type: 2}
     - target: {fileID: 4869386244935658664, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: talkState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
+    - target: {fileID: 4869386244935658664, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: taskCheckerSO
       value: 
       objectReference: {fileID: 11400000, guid: cc0a2659d6249174998a6b53c37be4ab, type: 2}
@@ -11262,6 +11298,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2078208689}
+    - target: {fileID: 5029463123613849163, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: activeQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 19e031f766554c348a423c7fd01b9b20, type: 2}
     - target: {fileID: 5029463123613849163, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
@@ -11274,10 +11314,18 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 301022966}
+    - target: {fileID: 5029463123613849163, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogueAnimator
+      value: 
+      objectReference: {fileID: 1591317043}
     - target: {fileID: 5100209742115234005, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 301022966}
+    - target: {fileID: 5511215828868587869, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: activeQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 19e031f766554c348a423c7fd01b9b20, type: 2}
     - target: {fileID: 5511215828868587869, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
@@ -11290,6 +11338,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 688631147}
+    - target: {fileID: 5511215828868587869, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogueAnimator
+      value: 
+      objectReference: {fileID: 1668772132}
     - target: {fileID: 5860925674378337799, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -11335,6 +11387,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8489884718327896566, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: activeQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 19e031f766554c348a423c7fd01b9b20, type: 2}
+    - target: {fileID: 8489884718327896566, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: questManager
       value: 
       objectReference: {fileID: 967127988}
@@ -11346,6 +11402,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 554250427}
+    - target: {fileID: 8489884718327896566, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
+      propertyPath: dialogueAnimator
+      value: 
+      objectReference: {fileID: 7212124682629031690}
     - target: {fileID: 8504619506524525701, guid: ed641fa5254b9de40a74292e48d27037, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -14952,6 +15012,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1458537278751451598, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
+      propertyPath: npcId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458537278751451598, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
       propertyPath: canTalk
       value: 0
       objectReference: {fileID: 0}
@@ -14959,6 +15023,10 @@ PrefabInstance:
       propertyPath: startAnim
       value: 
       objectReference: {fileID: 818518620}
+    - target: {fileID: 1458537278751451598, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
+      propertyPath: talkState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
     - target: {fileID: 1458537278751451598, guid: d621f1a93790cc54ca74761fe1982fc7, type: 3}
       propertyPath: dialogueManager
       value: 
@@ -16225,14 +16293,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1608231979}
     m_Modifications:
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: taskManagement
-      value: 
-      objectReference: {fileID: 2097721270}
     - target: {fileID: 3236601727493848963, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: m_Name
       value: WizardSecond
@@ -16282,13 +16342,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 554443726}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: npcId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: startAnim
       value: 
       objectReference: {fileID: 818518613}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: talkState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 554443726}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: taskManagement
+      value: 
+      objectReference: {fileID: 2097721270}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56479,14 +56555,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1608231979}
     m_Modifications:
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: taskManagement
-      value: 
-      objectReference: {fileID: 2097721270}
     - target: {fileID: 3236601727493848963, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: m_Name
       value: WizardFourth
@@ -56536,13 +56604,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 301022966}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: npcId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: startAnim
       value: 
       objectReference: {fileID: 818518603}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: talkState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 301022966}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: taskManagement
+      value: 
+      objectReference: {fileID: 2097721270}
     m_RemovedComponents:
     - {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
     m_RemovedGameObjects: []
@@ -57576,14 +57660,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1608231979}
     m_Modifications:
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: taskManagement
-      value: 
-      objectReference: {fileID: 2097721270}
     - target: {fileID: 3236601727493848963, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: m_Name
       value: WizardSixth
@@ -57633,13 +57709,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 688631147}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: npcId
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: startAnim
       value: 
       objectReference: {fileID: 818518593}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: talkState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 688631147}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: taskManagement
+      value: 
+      objectReference: {fileID: 2097721270}
     m_RemovedComponents:
     - {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
     m_RemovedGameObjects: []
@@ -57705,14 +57797,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1608231979}
     m_Modifications:
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
-      propertyPath: taskManagement
-      value: 
-      objectReference: {fileID: 2097721270}
     - target: {fileID: 3236601727493848963, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: m_Name
       value: WizardThird
@@ -57762,13 +57846,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1427682554}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: npcId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: startAnim
       value: 
       objectReference: {fileID: 818518608}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: talkState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1427682554}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
+      propertyPath: taskManagement
+      value: 
+      objectReference: {fileID: 2097721270}
     m_RemovedComponents:
     - {fileID: 521839403811757064, guid: 22ede0d79de5d984ca61240d3be55169, type: 3}
     m_RemovedGameObjects: []
@@ -94081,7 +94181,7 @@ Tilemap:
       - {fileID: 1318181101, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1759062162, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 372347338, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 17, y: -3, z: 0}
@@ -94201,7 +94301,7 @@ Tilemap:
       - {fileID: -205311114, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -1569301874, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1737792764, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 28, y: -2, z: 0}
@@ -94241,7 +94341,7 @@ Tilemap:
       - {fileID: 1318181101, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 1759062162, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 372347338, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: -1, z: 0}
@@ -94521,7 +94621,7 @@ Tilemap:
       - {fileID: -622962177, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: 517446959, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
       - {fileID: -1515953551, guid: 4c17caffdf483e3429fb64ce3b411c4d, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 14, y: 6, z: 0}
@@ -95425,9 +95525,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: npcId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: startAnim
       value: 
       objectReference: {fileID: 818518615}
+    - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
+      propertyPath: talkState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ba71a92d9006fe45ae77f5029155a41, type: 2}
     - target: {fileID: 7941184788175922464, guid: 5e96500925f17f1439f0ec306014da30, type: 3}
       propertyPath: dialogueManager
       value: 
